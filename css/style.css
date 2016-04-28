@@ -16,7 +16,7 @@ body{
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 50px;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 900; 
 }
 
 .navbar {
@@ -26,3 +26,10 @@ body{
 section{
   min-height:900px; 
 } 
+
+/* Contact */
+
+.horizontal-contact{
+  width: 150px;
+  border-top: 4px double #FC053A;
+}
