@@ -39,3 +39,14 @@ section{
   width: 150px;
   border-top: 4px double #FC053A;
 }
+
+.contact-form {
+  float:center;
+}
+
+.btn-for-sending {
+  padding: 9px 17px;
+  color: #000;
+  border: 1px solid #000;
+  background: transparent;
+}
