@@ -1,11 +1,18 @@
 body{
   background-color: #fff;
-  padding-top: 70px;
 }
 
 .page-scroll {
-  font-family: 'Dosis', sans-serif;
   font-size: 20px;
+}
+
+.text {
+  font-family: 'Dosis', sans-serif;
+}
+
+.subtitle{
+  padding-top: 70px;
+  text-align: center;
 }
 
 .navbar {
