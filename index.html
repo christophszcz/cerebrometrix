@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet">
   <title>Cerebrometrix</title>
@@ -87,8 +87,23 @@
     <section class="main-section">
       <div class="container">
         <div class="intro-text">
-          <h2 class="subtitle text">Contact</h2>
+          <h2 class="subtitle">Contact</h2>
           <hr class="horizontal-contact">
+          <p class="subtitle-text">Please tell us how we can help you.</p>
+
+          <form action="" method="post" enctype="multipart/form-data">
+              <fieldset>
+                <label for="name" >Name:</label> 
+                <input type="text" name="name" placeholder="Your Full Name" autofocus><br><br>  
+                <label for="email-add" >Email:</label>
+                <input type="email" name="email-add" autofocus><br><br>
+                <label for="mobile">Mobile:</label>
+                <input type="tel" name="mobile" autofocus><br>
+                <label for="message" >Message:</label> 
+                <textarea id="message"></textarea>  
+              </fieldset><br>
+            <input type="submit" value="Submit">
+          </form>
         </div>
       </div>
     </section>

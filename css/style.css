@@ -1,13 +1,13 @@
+/* Entire Page */
+
 body{
   background-color: #fff;
 }
 
-.page-scroll {
-  font-size: 20px;
-}
-
-.text {
-  font-family: 'Dosis', sans-serif;
+.subtitle-text {
+  font-size: 18px;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
 .subtitle{
@@ -19,13 +19,19 @@ body{
   font-weight: 900; 
 }
 
+section{
+  min-height:900px; 
+} 
+
+/* Navbar */
+
 .navbar {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
 }
 
-section{
-  min-height:900px; 
-} 
+.page-scroll {
+  font-size: 20px;
+}
 
 /* Contact */
 
