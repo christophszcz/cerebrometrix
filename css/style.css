@@ -70,7 +70,7 @@ form textarea{
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   padding-top: 20px;
-  height: 200px;
+  height: 300px;
   resize: none;
 
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -87,4 +87,16 @@ form textarea:focus {
   color: #000;
   border: 1px solid #000;
   background: transparent;
+  width: 70px;
+  border-radius:0;
+
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.btn:hover{
+  background-color: red;
+  color: #fff;
+  border: 1px solid red;
 }
