@@ -8,6 +8,7 @@ body{
   font-size: 18px;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
+  font-weight: 300;
 }
 
 .subtitle{
@@ -42,6 +43,43 @@ section{
 
 .contact-form {
   float:center;
+}
+
+form input {
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  padding-top: 20px;
+
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+form input:focus {
+  outline: none;  
+}
+
+#mobile{
+  padding-bottom: 20px;
+}
+
+form textarea{
+  border:none;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-top: 20px;
+  height: 200px;
+  resize: none;
+
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+form textarea:focus {
+  outline: none;  
 }
 
 .btn-for-sending {
