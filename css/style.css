@@ -24,6 +24,11 @@ section{
   min-height:900px; 
 } 
 
+.horizontal{
+  width: 150px;
+  border-top: 4px double #FC053A;
+}
+
 /* Navbar */
 
 .navbar {
@@ -59,17 +64,7 @@ section{
 
 /* About */
 
-.horizontal-about{
-  width: 150px;
-  border-top: 4px double #FC053A;
-}
-
 /* Contact */
-
-.horizontal-contact{
-  width: 150px;
-  border-top: 4px double #FC053A;
-}
 
 .contact-form {
   float:center;
