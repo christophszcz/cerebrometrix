@@ -70,18 +70,22 @@ section{
   float:center;
 }
 
-form input.text {
+form label.text {
+  
+}
+
+form input.space {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+
   border: none;
   border-top: 1px solid #ccc;
   width: 100%;
   padding-top: 20px;
-
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 25px;
-  font-weight: 300;
 }
-
-form input.text:focus {
+ 
+form input.space:focus {
   outline: none;  
 }
 
