@@ -137,3 +137,11 @@ form textarea:focus {
 }
 
 /* Contact */
+
+.contact-text{
+  text-align: center;
+}
+
+.corresponding-text{
+  text-align: center;
+}
