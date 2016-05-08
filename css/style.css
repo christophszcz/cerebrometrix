@@ -78,7 +78,7 @@ form input.text {
 
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 25px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 form input.text:focus {
@@ -100,7 +100,7 @@ form textarea{
 
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 25px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 form textarea:focus {
