@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("label").hide();
+  $("label").hide();     
 });
 
 $(window).scroll(function() {
@@ -16,6 +16,12 @@ $(window).scroll(function() {
   }
 });
 
-$(".space").keypress(function() {
-  $("label").show(); 
-});
+// $( '#name-input' ).select(function() {
+//   if ($('#name-input').val().length > 0) {
+//     $(".name-label").show(); 
+//   } else if ($('#name-input').val() === "" ) {
+//     $(".name-label").hide();  
+//   } 
+// }); 
+   
+

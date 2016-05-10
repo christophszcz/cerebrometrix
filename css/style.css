@@ -155,4 +155,16 @@ section.contact-section{
 .corresponding-text{
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
+  font-size: 22px;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
 }
