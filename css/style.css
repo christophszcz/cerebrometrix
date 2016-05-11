@@ -141,7 +141,9 @@ form textarea:focus {
 /* Contact */
 
 section.contact-section{
-  background-color: #000;
+  background-image: url('../images/20150913_181159.jpg');
+  min-height:700px;
+  background-size: 1280px 1004px;
 }
 
 .contact-text{
