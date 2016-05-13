@@ -70,6 +70,25 @@ section{
   font-weight: 100;
 }
 
+.name{
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.title{
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.mini-social-media{
+  font-size: 1em;
+  letter-spacing: 5px;
+}
+
 /* About */
 
 /* Quote */
