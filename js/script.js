@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("label").hide();     
+  $("label").hide();      
 });
 
 $(window).scroll(function() {
@@ -16,12 +16,18 @@ $(window).scroll(function() {
   }
 });
 
-// $( '#name-input' ).select(function() {
-//   if ($('#name-input').val().length > 0) {
-//     $(".name-label").show(); 
-//   } else if ($('#name-input').val() === "" ) {
-//     $(".name-label").hide();  
-//   } 
-// }); 
+
+ // $('#name-input').input(function() {
+ //    if ($('#name-input').val().length > 0) {
+ //      $(".name-label").show(); 
+ //    }
+ //  });
+  
+
+if ($('#name-input').val() === "" ) {
+    $(".name-label").hide();  
+  }
+
+
    
 
