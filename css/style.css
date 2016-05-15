@@ -113,6 +113,11 @@ section.main-section{
   letter-spacing: 5px;
 }
 
+.horizontal-short{
+  width: 90px;
+  border-top: 4px double #FC053A;
+}
+
 /* About */
 
 /* Quote */
