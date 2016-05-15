@@ -62,6 +62,22 @@ section{
   color:#ef4035;
 }
 
+/* Main Section */
+
+section.main-section{
+  min-height:700px;
+}
+
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+  margin-top: 380px;
+}
+
 /* Our Team */
 
 .our-team-section{
