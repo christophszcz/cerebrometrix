@@ -130,6 +130,16 @@ section.main-section{
 
 /* About */
 
+section.about-section{ 
+  min-height: 700px;
+}
+
+.description-text {
+  font-size: 20px;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
 /* Quote */
 
 .contact-form {
