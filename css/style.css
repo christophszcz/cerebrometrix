@@ -156,10 +156,18 @@ form label{
   top: 28px;
 }
 
+form label.project-details-label{
+  top: 72px;
+}
+
 form label.show{
   display: inline-block;
 }
 
+form textarea#project-details-textarea{
+  padding-top: 60px;
+}
+     
 form input.space {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 25px;
