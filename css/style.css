@@ -66,7 +66,7 @@ section{
 
 section.main-section{
   min-height:700px;
-  background-image: url('../images/IMG_20150909_165109237_HDR.jpg');
+  background-image: url('../images/city_center.jpg');
   background-size: 1280px 1004px;
 }
 
@@ -149,8 +149,12 @@ section.about-section{
   float:center;
 }
 
-form label.text {
-  
+form label{
+ display: none;
+}
+
+form label.show{
+  display: inline-block;
 }
 
 form input.space {

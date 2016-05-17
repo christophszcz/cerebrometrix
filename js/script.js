@@ -1,5 +1,14 @@
 $(document).ready(function(){
-  $("label").hide();      
+  $('#name-input').keypress(function(){
+    if ($('#name-input').val().length > 0) {
+      $(".name-label").addClass("show");
+    }
+  }); 
+  $('#name-input').keyup(function(){
+    if ($('#name-input').val().length === 0){
+      $(".name-label").removeClass("show");
+    }
+  }); 
 });
 
 $(window).scroll(function() {
@@ -17,17 +26,5 @@ $(window).scroll(function() {
 });
 
 
- // $('#name-input').input(function() {
- //    if ($('#name-input').val().length > 0) {
- //      $(".name-label").show(); 
- //    }
- //  });
-  
-
-if ($('#name-input').val() === "" ) {
-    $(".name-label").hide();  
-  }
-
-
-   
+ 
 
