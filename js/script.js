@@ -1,14 +1,47 @@
 $(document).ready(function(){
   $('#name-input').keypress(function(){
-    if ($('#name-input').val().length > 0) {
+    if ($(this).val().length > 0) {
       $(".name-label").addClass("show");
     }
   }); 
   $('#name-input').keyup(function(){
-    if ($('#name-input').val().length === 0){
+    if ($(this).val().length === 0){
       $(".name-label").removeClass("show");
     }
   }); 
+
+  $('#institution-input').keypress(function(){
+    if ($(this).val().length > 0) {
+      $(".institution-label").addClass("show");
+    }
+  }); 
+  $('#institution-input').keyup(function(){
+    if ($(this).val().length === 0){
+      $(".institution-label").removeClass("show");
+    }
+  });
+
+  $('#email-input').keypress(function(){
+    if ($(this).val().length > 0) {
+      $(".email-label").addClass("show");
+    }
+  }); 
+  $('#email-input').keyup(function(){
+    if ($(this).val().length === 0){
+      $(".email-label").removeClass("show");
+    }
+  });
+
+  $('#phone-number-input').keypress(function(){
+    if ($(this).val().length > 0) {
+      $(".phone-number-label").addClass("show");
+    }
+  }); 
+  $('#phone-number-input').keyup(function(){
+    if ($(this).val().length === 0){
+      $(".phone-number-label").removeClass("show");
+    }
+  });
 });
 
 $(window).scroll(function() {
@@ -24,7 +57,3 @@ $(window).scroll(function() {
     $(".navbar").css("box-shadow", "0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2)");
   }
 });
-
-
- 
-
