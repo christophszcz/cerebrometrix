@@ -42,6 +42,17 @@ $(document).ready(function(){
       $(".phone-number-label").removeClass("show");
     }
   });
+
+  $('#project-details-textarea').keypress(function(){
+    if ($(this).val().length > 0) {
+      $(".project-details-label").addClass("show");
+    }
+  }); 
+  $('#project-details-textarea').keyup(function(){
+    if ($(this).val().length === 0){
+      $(".project-details-label").removeClass("show");
+    }
+  });
 });
 
 $(window).scroll(function() {
