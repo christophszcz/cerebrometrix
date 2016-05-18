@@ -17,6 +17,10 @@ $(document).ready(function(){
   $('#institution-input').keypress(function(){
     if ($(this).val().length > 0) {
       $(".institution-label").addClass("show");
+      $( ".institution-label" ).animate({
+        top: "8px",
+      }, 300, function() {
+      });
     }
   }); 
   $('#institution-input').keyup(function(){
