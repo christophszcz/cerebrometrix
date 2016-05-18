@@ -2,6 +2,10 @@ $(document).ready(function(){
   $('#name-input').keypress(function(){
     if ($(this).val().length > 0) {
       $(".name-label").addClass("show");
+      $( ".name-label" ).animate({
+        top: "20px",
+      }, 300, function() {
+      });
     }
   }); 
   $('#name-input').keyup(function(){

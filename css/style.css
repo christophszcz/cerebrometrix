@@ -154,6 +154,7 @@ form label{
   display: none;
   position: relative;
   padding-left: 15px;
+  transition: display 5s;
 }
 
 form label.show{
@@ -162,7 +163,7 @@ form label.show{
 
 form label.name-label{
   height: 12px;
-  top: 19px;  
+  top: 28px;  
 }
 
 form label.institution-label{
@@ -187,6 +188,7 @@ form label.project-details-label{
 
 form textarea#project-details-textarea{
   padding-top: 60px;
+  padding-left: 15px;
 }
      
 form input.space {
