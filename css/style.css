@@ -154,6 +154,7 @@ form label{
   display: none;
   position: relative;
   top: 28px;
+  padding-left: 15px;
 }
 
 form label.project-details-label{
@@ -162,6 +163,30 @@ form label.project-details-label{
 
 form label.show{
   display: inline-block;
+}
+
+form label.name-label{
+  height: 12px;  
+}
+
+form label.institution-label{
+  top: 15px;
+  height: 0px;
+}
+
+form label.email-label{
+  top: 12px;
+  height: 0px;
+}
+
+form label.phone-number-label{
+  height: 0px;
+  top: 15px;
+}
+
+form label.project-details-label{
+  height: 0px;
+  top: 16px; 
 }
 
 form textarea#project-details-textarea{
@@ -177,6 +202,7 @@ form input.space {
   border-top: 1px solid #ccc;
   width: 100%;
   padding-top: 20px;
+  padding-left: 15px;
 }
  
 form input.space:focus {
