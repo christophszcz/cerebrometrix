@@ -153,12 +153,7 @@ form label{
   color: red;
   display: none;
   position: relative;
-  top: 28px;
   padding-left: 15px;
-}
-
-form label.project-details-label{
-  top: 72px;
 }
 
 form label.show{
@@ -166,27 +161,28 @@ form label.show{
 }
 
 form label.name-label{
-  height: 12px;  
+  height: 12px;
+  top: 19px;  
 }
 
 form label.institution-label{
-  top: 15px;
+  top: 7px;
   height: 0px;
 }
 
 form label.email-label{
-  top: 12px;
+  top: 7px;
   height: 0px;
 }
 
 form label.phone-number-label{
   height: 0px;
-  top: 15px;
+  top: 7px;
 }
 
 form label.project-details-label{
   height: 0px;
-  top: 16px; 
+  top: 8px;
 }
 
 form textarea#project-details-textarea{
