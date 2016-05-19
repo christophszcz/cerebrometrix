@@ -78,6 +78,14 @@ section.main-section{
   line-height: 1.33;
   border-radius: 25px;
   margin-top: 210px;
+  border: solid #fff;
+  background-color: transparent;
+}
+
+.glyphicon-menu-down {
+  right: 3px;
+  top: 2px;
+  color: #fff;
 }
 
 .brand-name{
