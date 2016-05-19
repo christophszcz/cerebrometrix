@@ -2,10 +2,7 @@ $(document).ready(function(){
   $('#name-input').keypress(function(){
     if ($(this).val().length > 0) {
       $(".name-label").addClass("show");
-      $( ".name-label" ).animate({
-        top: "20px",
-      }, 300, function() {
-      });
+      $( ".name-label" ).animate({top: "20px"}, 300);  
     }
   }); 
   $('#name-input').keyup(function(){
@@ -17,10 +14,7 @@ $(document).ready(function(){
   $('#institution-input').keypress(function(){
     if ($(this).val().length > 0) {
       $(".institution-label").addClass("show");
-      $( ".institution-label" ).animate({
-        top: "8px",
-      }, 300, function() {
-      });
+      $( ".institution-label" ).animate({top: "8px"}, 300);
     }
   }); 
   $('#institution-input').keyup(function(){
@@ -32,6 +26,7 @@ $(document).ready(function(){
   $('#email-input').keypress(function(){
     if ($(this).val().length > 0) {
       $(".email-label").addClass("show");
+      $('.email-label').animate({top:'5px'}, 300); 
     }
   }); 
   $('#email-input').keyup(function(){
@@ -43,6 +38,7 @@ $(document).ready(function(){
   $('#phone-number-input').keypress(function(){
     if ($(this).val().length > 0) {
       $(".phone-number-label").addClass("show");
+      $('.phone-number-label').animate({top: "5px"}, 300);
     }
   }); 
   $('#phone-number-input').keyup(function(){
@@ -54,6 +50,7 @@ $(document).ready(function(){
   $('#project-details-textarea').keypress(function(){
     if ($(this).val().length > 0) {
       $(".project-details-label").addClass("show");
+      $(".project-details-label").animate({top: "5px"}, 300);
     }
   }); 
   $('#project-details-textarea').keyup(function(){

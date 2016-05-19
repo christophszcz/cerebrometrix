@@ -172,18 +172,18 @@ form label.institution-label{
 }
 
 form label.email-label{
-  top: 7px;
+  top: 17px;
   height: 0px;
 }
 
 form label.phone-number-label{
   height: 0px;
-  top: 7px;
+  top: 13px;
 }
 
 form label.project-details-label{
   height: 0px;
-  top: 8px;
+  top: 17px;
 }
 
 form textarea#project-details-textarea{
