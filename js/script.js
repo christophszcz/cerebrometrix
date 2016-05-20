@@ -58,6 +58,13 @@ $(document).ready(function(){
       $(".project-details-label").removeClass("show");
     }
   });
+
+  $(document).on('click', '.page-scroll', function() {  
+    $('li').removeClass('highlight');
+    $('a').removeClass('indicate');
+    $(this).addClass('highlight');
+    $(this).children().css('color',  'red');
+  });
 });
 
 $(window).scroll(function() {

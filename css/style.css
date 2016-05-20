@@ -58,8 +58,14 @@ section{
   color:#9d9d9d;
 }
 
-.navbar-inverse .navbar-nav>li>a:visited{
-  color:#ef4035;
+.highlight{
+  background-color: #fff; 
+  border-radius: 7px; 
+  color: red;
+}
+
+.indicate{
+  color: red;
 }
 
 /* Main Section */
