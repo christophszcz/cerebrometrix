@@ -61,9 +61,10 @@ $(document).ready(function(){
 
   $(document).on('click', '.page-scroll', function() {  
     $('li').removeClass('highlight');
-    $('a').removeClass('indicate');
+    $('#about-link, #our-team-link, #work-link, #get-a-quote-link, #contact-link').css('color',  '#fff');
     $(this).addClass('highlight');
     $(this).children().css('color',  'red');
+    //$(this).children().addClass('indicate:active');
   });
 });
 
