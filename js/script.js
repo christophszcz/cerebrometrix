@@ -59,13 +59,13 @@ $(document).ready(function(){
     }
   });
 
-  $(document).on('click', '.page-scroll', function() {  
+  $(document).on('click', '.page-scroll.text', function() { 
     $('li').removeClass('highlight');
     $('#about-link, #our-team-link, #work-link, #get-a-quote-link, #contact-link').css('color',  '#fff');
     $(this).addClass('highlight');
     $(this).children().css('color',  'red');
     //$(this).children().addClass('indicate:active');
-  });
+  }); 
 });
 
 $(window).scroll(function() {
