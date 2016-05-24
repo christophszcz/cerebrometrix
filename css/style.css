@@ -67,7 +67,7 @@ section{
 
 section.main-section{
   min-height:700px;
-  background-image: url('../images/main_photo.jpg');
+  background-image: url('../images/main_photo.jpeg');
   background-size: 1280px 929px;
 }
 
@@ -83,12 +83,20 @@ section.main-section{
   background-color: transparent;
 }
 
+.btn-circle.btn-lg:hover {
+  border: solid #ABAEAD;
+}
+ 
 .glyphicon-menu-down {
   right: 3px;
   top: 2px;
   color: #fff;
 }
 
+.shadedDownArrow{
+  color: #ABAEAD;
+}
+ 
 .brand-name{
   text-align: center;
   margin-top: 50px;
@@ -260,7 +268,7 @@ form textarea:focus {
   transition: background 1s, color 1s, border 1s;
 }
 
-.btn:hover{
+.btn.btn-for-sending:hover{
   background-color: red;
   color: #fff;
   border: 1px solid red;
