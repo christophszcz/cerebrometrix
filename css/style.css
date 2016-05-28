@@ -155,6 +155,10 @@ section.main-section{
 
 /* About */
 
+.about-description {
+  margin-top: 100px;
+}
+
 section.about-section{ 
   min-height: 700px;
 }
