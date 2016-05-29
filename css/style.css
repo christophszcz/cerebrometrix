@@ -164,7 +164,7 @@ section.about-section{
 }
 
 .description-text {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   text-align: center;
@@ -173,6 +173,13 @@ section.about-section{
 .sub-section-icon {
   font-size: 4em;
   text-align: center;
+}
+
+.sub-section-title{
+  text-align: center;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 /* Quote */
