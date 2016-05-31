@@ -84,11 +84,13 @@ $(document).ready(function(){
 
 $(window).scroll(function() {
   var aboutScroll = $('#about-scroll').offset().top,
+    ourTeamScroll = $('#our-team-scroll').offset().top,
     margin = $('#about-scroll').outerHeight(),
+    marginOurTeam = $('#our-team-scroll').outerHeight(),
     windowHeight = $(window).height(),
     windowScroll = $(this).scrollTop();
-  if (windowScroll === aboutScroll ){
-    $('.about-description').fadeIn();
+  if (windowScroll >= (aboutScroll + margin - windowHeight) && windowScroll <= (ourTeamScroll + marginOurTeam - windowHeight)){
+    $('.about-description').fadeIn(3000);
   }
   if ( windowScroll < (aboutScroll + margin - windowHeight)){
     $(".navbar-inverse").css({"background-color": "transparent" , "border-color": "transparent" });
