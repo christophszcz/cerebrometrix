@@ -1,5 +1,9 @@
 $(document).ready(function(){
-  $('.about-description').fadeOut();
+  $('#efficient-section').fadeOut();
+  $('#manual-id-section').fadeOut();
+  $('#cost-effective-section').fadeOut();
+  $('#experts-section').fadeOut();
+
   $('#name-input').keypress(function(){
     if ($(this).val().length > 0) {
       $(".name-label").addClass("show");
@@ -90,7 +94,10 @@ $(window).scroll(function() {
     windowHeight = $(window).height(),
     windowScroll = $(this).scrollTop();
   if (windowScroll >= (aboutScroll + margin - windowHeight) && windowScroll <= (ourTeamScroll + marginOurTeam - windowHeight)){
-    $('.about-description').fadeIn(3000);
+    $('#efficient-section').fadeIn(2000);
+    $('#manual-id-section').fadeIn(3000);
+    $('#cost-effective-section').fadeIn(4000);
+    $('#experts-section').fadeIn(5000);
   }
   if ( windowScroll < (aboutScroll + margin - windowHeight)){
     $(".navbar-inverse").css({"background-color": "transparent" , "border-color": "transparent" });
