@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $('.about-description').fadeOut();
   $('#name-input').keypress(function(){
     if ($(this).val().length > 0) {
       $(".name-label").addClass("show");
@@ -86,6 +87,9 @@ $(window).scroll(function() {
     margin = $('#about-scroll').outerHeight(),
     windowHeight = $(window).height(),
     windowScroll = $(this).scrollTop();
+  if (windowScroll === aboutScroll ){
+    $('.about-description').fadeIn();
+  }
   if ( windowScroll < (aboutScroll + margin - windowHeight)){
     $(".navbar-inverse").css({"background-color": "transparent" , "border-color": "transparent" });
     $(".navbar").css("box-shadow", "none");
