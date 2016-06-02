@@ -94,10 +94,10 @@ $(window).scroll(function() {
     windowHeight = $(window).height(),
     windowScroll = $(this).scrollTop();
   if (windowScroll >= (aboutScroll + margin - windowHeight) && windowScroll <= (ourTeamScroll + marginOurTeam - windowHeight)){
-    $('#efficient-section').delay( 2000 ).fadeIn(3000);
-    $('#manual-id-section').delay( 3000 ).fadeIn(3000);
-    $('#cost-effective-section').delay( 4000 ).fadeIn(3000);
-    $('#experts-section').delay( 5000 ).fadeIn(3000);
+    $('#efficient-section').delay( 1000 ).fadeIn(3000);
+    $('#manual-id-section').delay( 2000 ).fadeIn(3000);
+    $('#cost-effective-section').delay( 3000 ).fadeIn(3000);
+    $('#experts-section').delay( 4000 ).fadeIn(3000);
   }
   if ( windowScroll < (aboutScroll + margin - windowHeight)){
     $(".navbar-inverse").css({"background-color": "transparent" , "border-color": "transparent" });
