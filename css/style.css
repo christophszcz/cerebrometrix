@@ -146,6 +146,11 @@ section.main-section{
 .mini-social-media{
   font-size: 1.5em;
   letter-spacing: 5px;
+  text-decoration: none;
+}
+
+.mini-social-media:link, .mini-social-media:hover, .mini-social-media:active, .mini-social-media:visited {
+  text-decoration: none;
 }
 
 .horizontal-short{
