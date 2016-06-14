@@ -85,6 +85,7 @@ section.main-section{
 
 .btn-circle.btn-lg:hover {
   border: solid #ABAEAD;
+  background-color: transparent;
 }
  
 .glyphicon-menu-down {
