@@ -314,6 +314,10 @@ section.contact-section{
   background-size: 1280px 1004px;
 }
 
+.contact-information{
+  position: absolute;
+}
+
 .contact-text{
   text-align: center;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
