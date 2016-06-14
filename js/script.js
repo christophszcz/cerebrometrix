@@ -3,6 +3,7 @@ $(document).ready(function(){
   $('#manual-id-section').fadeOut();
   $('#cost-effective-section').fadeOut();
   $('#experts-section').fadeOut();
+  $('.what-we-do-title').fadeOut();
 
   $('#name-input').keypress(function(){
     if ($(this).val().length > 0) {
@@ -89,8 +90,11 @@ $(document).ready(function(){
 $(window).scroll(function() {
   var aboutScroll = $('#about-scroll').offset().top,
     ourTeamScroll = $('#our-team-scroll').offset().top,
+    whatWeDoScroll = $('#what-we-do-scroll').offset().top,
+    getAQuoteScroll = $('#get-a-quote-scroll').offset().top,
     margin = $('#about-scroll').outerHeight(),
     marginOurTeam = $('#our-team-scroll').outerHeight(),
+    marginGetAQuote = $('#get-a-quote-scroll').outerHeight(),
     windowHeight = $(window).height(),
     windowScroll = $(this).scrollTop();
   if (windowScroll >= (aboutScroll + margin - windowHeight) && windowScroll <= (ourTeamScroll + marginOurTeam - windowHeight)){
@@ -98,6 +102,9 @@ $(window).scroll(function() {
     $('#manual-id-section').delay( 2000 ).fadeIn(3000);
     $('#cost-effective-section').delay( 3000 ).fadeIn(3000);
     $('#experts-section').delay( 4000 ).fadeIn(3000);
+  }
+  if (windowScroll >= (whatWeDoScroll + margin - windowHeight) && windowScroll <= (getAQuoteScroll + marginGetAQuote - windowHeight)){
+    $('.what-we-do-title').delay( 500 ).fadeIn(3000);
   }
   if ( windowScroll < (aboutScroll + margin - windowHeight)){
     $(".navbar-inverse").css({"background-color": "transparent" , "border-color": "transparent" });
