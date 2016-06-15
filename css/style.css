@@ -117,10 +117,45 @@ section.main-section{
   margin-top: 150px;
 }
 
+/* About */
+
+section.about-section{ 
+  top:600px;
+  min-height: 700px;
+  position: relative;
+  height: 700px;
+  width: 1280px;
+  background-color: #fff;
+}
+
+.about-description {
+  margin-top: 100px;
+}
+.description-text {
+  font-size: 18px;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.sub-section-icon {
+  font-size: 4em;
+  text-align: center;
+}
+
+.sub-section-title{
+  text-align: center;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 /* Our Team */
 
 .our-team-section{
+  top:600px;
   background-color: #f5f5f5;
+  position: relative;
 }
 
 .description{
@@ -165,39 +200,6 @@ section.main-section{
 
 .last-team-member{
   margin-bottom: 40px;
-}
-
-/* About */
-
-section.about-section{ 
-  top:600px;
-  min-height: 700px;
-  position: relative;
-  height: 700px;
-  width: 1280px;
-  background-color: #fff;
-}
-
-.about-description {
-  margin-top: 100px;
-}
-.description-text {
-  font-size: 18px;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  text-align: center;
-}
-
-.sub-section-icon {
-  font-size: 4em;
-  text-align: center;
-}
-
-.sub-section-title{
-  text-align: center;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
 }
 
 /* Quote */
