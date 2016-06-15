@@ -131,6 +131,7 @@ section.about-section{
 .about-description {
   margin-top: 100px;
 }
+
 .description-text {
   font-size: 18px;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -160,12 +161,6 @@ section.about-section{
 
 .description{
   margin-top: 125px;
-}
-
-.description-text {
-  font-size: 18px;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 100;
 }
 
 .name{
