@@ -329,7 +329,7 @@ form textarea:focus {
 /* Contact */
 
 section.contact-section{
-  background-image: url('../images/potsdam.jpg');
+  background-image: url('../images/brandenburg_gate.jpg');
   min-height:700px;
   background-size: 1280px 1004px;
   top: 700px;
@@ -346,6 +346,7 @@ section.contact-section{
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   text-transform: uppercase; 
+  color: #fff;
 }
 
 .corresponding-text{
@@ -354,10 +355,19 @@ section.contact-section{
   font-size: 22px;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
+  color: #fff;
+}
+
+.contact-description {
+  color: #fff;
 }
 
 a {
   color: #000;
+}
+
+a.contact-anchor{
+  color: #fff;
 }
 
 .social-media{
