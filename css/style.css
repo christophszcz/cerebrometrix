@@ -173,7 +173,7 @@ section.about-section{
 
 .title{
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -195,6 +195,18 @@ section.about-section{
 
 .last-team-member{
   margin-bottom: 40px;
+}
+
+.chris-description {
+  top:40px;
+}
+
+.chloe-description {
+  top:50px;
+}
+
+.vivian-description {
+  top:80px;
 }
 
 /* What We Do */
