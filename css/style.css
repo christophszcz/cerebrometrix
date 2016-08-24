@@ -64,6 +64,12 @@ section{
   border-radius: 7px; 
 }
 
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background-color: #fff;
+  color: red;
+  border-radius: 5px;
+}
+
 /* Main Section */
 
 section.main-section{
