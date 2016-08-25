@@ -84,6 +84,14 @@ section{
   color: #fff;
 }
 
+/* Navbar Media Queries */
+
+@media (min-width: 768px){
+  .navbar-right {
+    margin-right: -40px;
+  }
+}
+
 /* Main Section */
 
 section.main-section{
