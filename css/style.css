@@ -84,11 +84,21 @@ section{
   color: #fff;
 }
 
+.navbar-toggle {
+  margin-top: 20px;
+}
+
 /* Navbar Media Queries */
 
 @media (min-width: 768px){
   .navbar-right {
     margin-right: -40px;
+  }
+}
+
+@media (max-width: 768px ){
+  #bs-example-navbar-collapse-1 {
+    background-color: rgb(0, 0, 0);
   }
 }
 
