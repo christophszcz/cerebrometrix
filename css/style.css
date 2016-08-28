@@ -236,6 +236,14 @@ section.about-section{
   text-transform: uppercase;
 }
 
+/* About Section Media Queries */
+
+@media(max-width: 992px){
+  #experts-description{
+    margin-bottom: 50px;
+  }
+}
+
 /* Our Team */
 
 .our-team-section{
@@ -284,6 +292,7 @@ section.about-section{
 
 .chris-description {
   top:40px;
+  margin-bottom: 0px;
 }
 
 .chloe-description {
@@ -292,6 +301,14 @@ section.about-section{
 
 .vivian-description {
   top:80px;
+}
+
+/* Our Team Section Media Queries */
+
+@media (max-width: 992px){
+  .chris-description{
+    margin-bottom: 40px;
+  }
 }
 
 /* What We Do */
@@ -432,6 +449,10 @@ section.contact-section{
   /*top: 700px;*/
   background-color: #fff;
   position: relative;
+}
+
+.contact-information{
+  top: 50px;
 }
 
 .contact-text{
