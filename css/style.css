@@ -155,6 +155,25 @@ section.main-section{
   margin-top: 150px;
 }
 
+/* Main Section Media Queries */
+
+@media (max-width: 690px ){
+  #bs-example-navbar-collapse-1 {
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+@media (max-width: 700px){
+  .brand-name{
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 480px){
+  .brand-name{
+    font-size: 30px;
+  }
+}
 /* About */
 
 section.about-section{ 
