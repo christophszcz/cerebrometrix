@@ -92,7 +92,37 @@ section{
 
 @media (min-width: 768px){
   .navbar-right {
-    margin-right: -30px;
+    margin-right: -40px;
+  }
+}
+
+@media (max-width: 1225px){
+  .navbar-right {
+    margin-right: -20px;
+  }
+}
+
+@media (max-width: 991px){
+  .navbar-right {
+    margin-right: -70px;
+  }
+}
+
+@media (max-width: 870px){
+  .navbar-right {
+    margin-right: -55px;
+  }
+}
+
+@media (max-width: 840px){
+  .navbar-right {
+    margin-right: -35px;
+  }
+}
+
+@media (max-width: 800px){
+  .navbar-right {
+    margin-right: -23px;
   }
 }
 
