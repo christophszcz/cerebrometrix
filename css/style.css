@@ -312,6 +312,15 @@ section.about-section{
   .chloe-description{
     margin-bottom: 40px;
   }
+  .robert-description{
+    margin-top: 40px;
+  }
+  .daniel-description{
+    margin-top: 40px;
+  }
+  .vivian-description {
+    top: 0px;
+  }
 }
 
 /* What We Do */
