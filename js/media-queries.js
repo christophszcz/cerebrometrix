@@ -18,6 +18,8 @@ function checkSize(){
 function checkImageSize(){
   if($('.brand-name').css('font-size') === '50px'){
     $('#main-logo').height(150);
+  } else if ($('.brand-name').css('font-size') === '30px'){
+    $('#main-logo').height(100);
   } else {
     $('#main-logo').height(200);
   }

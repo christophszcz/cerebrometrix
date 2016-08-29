@@ -126,7 +126,7 @@ section{
   }
 }
 
-@media (max-width: 768px ){
+@media (max-width: 767px ){
   #bs-example-navbar-collapse-1 {
     background-color: rgb(0, 0, 0);
   }
