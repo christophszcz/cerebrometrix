@@ -18,9 +18,12 @@ function checkSize(){
 function checkImageSize(){
   if($('.brand-name').css('font-size') === '50px'){
     $('#main-logo').height(150);
+    $('.main-section').css('background-size', '770px 700px');
   } else if ($('.brand-name').css('font-size') === '30px'){
     $('#main-logo').height(100);
+    $('.main-section').css('background-size', '536px 700px');
   } else {
     $('#main-logo').height(200);
+    $('.main-section').css('background-size', '1280px 929px');
   }
 }
