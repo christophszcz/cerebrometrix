@@ -1,6 +1,8 @@
 $(document).ready(function(){
     checkSize();
+    checkImageSize();
     $(window).resize(checkSize);
+    $(window).resize(checkImageSize);
 });
  
 function checkSize(){
@@ -13,3 +15,10 @@ function checkSize(){
   }
 }
 
+function checkImageSize(){
+  if($('.brand-name').css('font-size') === '50px'){
+    $('#main-logo').height(150);
+  } else {
+    $('#main-logo').height(200);
+  }
+}
