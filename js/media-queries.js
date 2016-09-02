@@ -1,8 +1,10 @@
 $(document).ready(function(){
     checkSize();
     checkImageSize();
+    checkTextSize();
     $(window).resize(checkSize);
     $(window).resize(checkImageSize);
+    $(window).resize(checkTextSize);
 });
  
 function checkSize(){
@@ -25,5 +27,11 @@ function checkImageSize(){
   } else {
     $('#main-logo').height(200);
     $('.main-section').css('background-size', '1280px 929px');
+  }
+}
+
+function checkTextSize(){
+  if($('.navbar-brand-name').css('font-size') === '19px'){
+    $(".project-details-label").css('font-size', '12px');
   }
 }

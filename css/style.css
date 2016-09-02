@@ -136,6 +136,12 @@ section{
   }
 }
 
+@media (max-width: 600px){
+  .navbar-brand-name {
+    font-size: 19px;
+  }
+}
+
 @media (max-width: 350px){
   .navbar-brand-name {
     font-size: 17px;
