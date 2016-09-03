@@ -33,6 +33,8 @@ function checkImageSize(){
 function checkTextSize(){
   if($('.navbar-brand-name').css('font-size') === '19px'){
     $(".project-details-label").css('font-size', '12px');
+  } else if($('.navbar-brand-name').css('font-size') === '17px'){
+    $(".project-details-label").css('font-size', '10px');
   } else{
     $(".project-details-label").css('font-size', '14px'); 
   }

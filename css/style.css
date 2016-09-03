@@ -142,7 +142,7 @@ section{
   }
 }
 
-@media (max-width: 350px){
+@media (max-width: 400px){
   .navbar-brand-name {
     font-size: 17px;
   }
