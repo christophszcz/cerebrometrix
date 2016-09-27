@@ -61,7 +61,7 @@ section{
 }
 
 .navbar-inverse .navbar-nav>li>a {
-  color: #fff;
+  color: #000;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover{
@@ -75,7 +75,7 @@ section{
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
   background-color: #fff;
-  color: red;
+  color: red !important;
   border-radius: 5px;
 }
 
@@ -85,7 +85,7 @@ section{
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 900;
-  color: #fff;
+  color: #000;
 }
 
 .navbar-toggle {
@@ -154,8 +154,11 @@ section.main-section{
   /*width: 100%;*/
   min-height:700px;
   background-image: url('../images/main_photo.jpeg');
-  background-size: 1400px 929px;
-  /*position: fixed;*/
+  background-size: 1366px 929px;
+  /*top: 700px;*/
+  background-color: #fff;
+  position: relative;
+  background-repeat: no-repeat;
 }
 
 .btn-circle.btn-lg {
@@ -166,7 +169,7 @@ section.main-section{
   line-height: 1.33;
   border-radius: 25px;
   margin-top: 15px;
-  border: solid #fff;
+  border: solid #000;
   background-color: transparent;
 }
 
@@ -178,7 +181,7 @@ section.main-section{
 .glyphicon-menu-down {
   right: 3px;
   top: 2px;
-  color: #fff;
+  color: #000;
 }
 
 .shadedDownArrow{
@@ -193,7 +196,7 @@ section.main-section{
   line-height: 55px;
   text-transform: uppercase;
   font-weight: 900;
-  color: #fff;
+  color: #000;
 }
 
 .main-logo{
@@ -473,10 +476,11 @@ form textarea:focus {
 section.contact-section{
   background-image: url('../images/brandenburg_gate.jpg');
   min-height:700px;
-  background-size: 1280px 1004px;
+  background-size: 1366px 1004px;
   /*top: 700px;*/
   background-color: #fff;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 .contact-information{

@@ -26,7 +26,7 @@ function checkImageSize(){
     $('.main-section').css('background-size', '536px 700px');
   } else {
     $('#main-logo').height(200);
-    $('.main-section').css('background-size', '1280px 929px');
+    $('.main-section').css('background-size', '1366px 929px');
   }
 }
 

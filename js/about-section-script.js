@@ -16,9 +16,13 @@ $(window).scroll(function() {
   if ( windowScroll < (aboutScroll + margin - windowHeight)){
     $(".navbar-inverse").css({"background-color": "transparent" , "border-color": "transparent" });
     $(".navbar").css("box-shadow", "none");
+    $(".navbar-inverse .navbar-nav>li>a").css("color", "#000");
+    $(".navbar-brand-name").css("color", "#000");  
   } else if (windowScroll >= (aboutScroll + margin - windowHeight)){
     $(".navbar-inverse").css({"background-color": "#000" , "border-color": "#000"});
     $(".navbar").css("box-shadow", "0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2)");
+    $(".navbar-inverse .navbar-nav>li>a").css("color", "#fff");
+    $(".navbar-brand-name").css("color", "#fff"); 
   }
   if (windowScroll >= (aboutScroll + margin - windowHeight) && windowScroll <= (ourTeamScroll + marginOurTeam - windowHeight)){
     $('#efficient-section').delay( 1000 ).fadeIn(3000);
