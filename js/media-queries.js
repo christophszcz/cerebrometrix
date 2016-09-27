@@ -17,16 +17,21 @@ function checkSize(){
   }
 }
 
-function checkImageSize(){
-  if($('.brand-name').css('font-size') === '50px'){
+function checkImageSize(){ 
+  if($('.brand-name').css('font-size') === '78px'){
+    $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
+  } else if($('.brand-name').css('font-size') === '50px'){
     $('#main-logo').height(150);
     $('.main-section').css('background-size', '723px 700px');
+    $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
   } else if ($('.brand-name').css('font-size') === '30px'){
     $('#main-logo').height(100);
     $('.main-section').css('background-size', '400px 500px');
+    $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
   } else {
     $('#main-logo').height(200);
     $('.main-section').css('background-size', '1366px 929px');
+    $(".navbar-inverse .navbar-nav>li>a").css("color", "#000");
   }
 }
 

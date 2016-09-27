@@ -28,6 +28,16 @@ $(window).scroll(function() {
     $(".navbar-inverse .navbar-toggle .icon-bar").css("background-color", "#fff");
     $(".navbar-header .navbar-toggle:hover .icon-bar").css("background-color", "#fff");  
   }
+
+  //Show toggle menu if it the link color turns black after scrolling down.
+  if ( (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '78px') || (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '50px') || (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '30px')) {
+    $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
+  }
+
+  // if ((windowScroll >= (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') !== '78px') || (windowScroll >= (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') !== '50px') || (windowScroll >= (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') !== '30px') ){
+  //   $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
+  // }
+
   if (windowScroll >= (aboutScroll + margin - windowHeight) && windowScroll <= (ourTeamScroll + marginOurTeam - windowHeight)){
     $('#efficient-section').delay( 1000 ).fadeIn(3000);
     $('#manual-id-section').delay( 2000 ).fadeIn(3000);
