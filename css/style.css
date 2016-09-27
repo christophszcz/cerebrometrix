@@ -96,6 +96,10 @@ section{
   background-color: #000;
 }
 
+.navbar-header .navbar-toggle:hover .icon-bar {
+  background-color: #fff !important;
+}
+
 /* Navbar Media Queries */
 
 @media (min-width: 768px){
