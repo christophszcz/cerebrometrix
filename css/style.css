@@ -92,6 +92,10 @@ section{
   margin-top: 20px;
 }
 
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #000;
+}
+
 /* Navbar Media Queries */
 
 @media (min-width: 768px){
