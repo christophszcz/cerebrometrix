@@ -223,6 +223,10 @@ section.main-section{
 @media (max-width: 700px){
   .brand-name{
     font-size: 50px;
+    margin-top:0px;
+  }
+  section.main-section {
+    min-height: 476px;
   }
 }
 
@@ -235,6 +239,12 @@ section.main-section{
 @media (max-width: 480px){
   .brand-name{
     font-size: 30px;
+  }
+  .main-logo{
+    margin-top: 55px;
+  }
+  section.main-section {
+    min-height: 326px;
   }
 }
 /* About */
