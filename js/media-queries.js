@@ -19,15 +19,11 @@ function checkSize(){
 
 function checkImageSize(){ 
   if($('.brand-name').css('font-size') === '50px'){
-    $('.main-section').css('background-size', '768px  522px');
-     
-  } else if($('.brand-name').css('font-size') === '50px'){
-    $('#main-logo').height(150);
-    $('.main-section').css('background-size', '700px 476px');
-    
-  } else if ($('.brand-name').css('font-size') === '30px'){
+    $('.main-section').css('background-size', '768px  522px');   
+  } else if($('.main-section').css('min-height') === '476px'){
     $('#main-logo').height(100);
-    $('.main-section').css('background-size', '480px 326px');
+    $('.main-section').css('background-size', '700px 476px');
+  } else if ($('.navbar-brand-name').css('font-size') === '18px'){
     $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
   } else {
     $('#main-logo').height(200);
