@@ -20,11 +20,11 @@ function checkSize(){
 function checkImageSize(){ 
   if($('.brand-name').css('font-size') === '50px'){
     $('.main-section').css('background-size', '768px  522px');
-    $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
+     
   } else if($('.brand-name').css('font-size') === '50px'){
     $('#main-logo').height(150);
     $('.main-section').css('background-size', '700px 476px');
-    $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
+    
   } else if ($('.brand-name').css('font-size') === '30px'){
     $('#main-logo').height(100);
     $('.main-section').css('background-size', '480px 326px');
