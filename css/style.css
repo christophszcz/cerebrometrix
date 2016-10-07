@@ -140,7 +140,7 @@ section{
 
 @media (max-width: 600px){
   .navbar-brand-name {
-    font-size: 19px;
+    font-size: 18px;
   }
 }
 
@@ -208,10 +208,13 @@ section.main-section{
 
 /* Main Section Media Queries */
 
-@media (max-width: 768px){
+@media (max-width: 767px){
   .brand-name{
     font-size: 50px;
     margin-top: 0px;
+  }
+  .navbar-brand-name{
+    font-size: 19px;
   }
 }
 
@@ -219,9 +222,6 @@ section.main-section{
   .brand-name{
     font-size: 48px;
     margin-top:0px;
-  }
-  section.main-section {
-    min-height: 476px;
   }
 }
 
@@ -232,8 +232,9 @@ section.main-section{
 }
 
 @media (max-width: 500px){
-  .main-logo{
-    margin-top: 280px;
+  #main-logo{
+    height: 100px;
+    margin-top: 120px;
   }
 }
 
