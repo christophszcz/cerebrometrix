@@ -1,10 +1,11 @@
 $(document).ready(function(){
-    checkSize();
-    checkTextSize();
-    checkImageSize();
-    $(window).resize(checkSize);
-    $(window).resize(checkImageSize);
-    $(window).resize(checkTextSize);
+  checkSize();
+  checkTextSize();
+  checkImageSize();
+
+  $(window).resize(checkSize);
+  $(window).resize(checkImageSize);
+  $(window).resize(checkTextSize);
 });
  
 function checkSize(){
@@ -17,25 +18,17 @@ function checkSize(){
   }
 }
 
-aboutScroll2 = $('#about-scroll').offset().top;
-margin2 = $('#about-scroll').outerHeight();
-ourTeamScroll2 = $('#our-team-scroll').offset().top;
-whatWeDoScroll2 = $('#what-we-do-scroll').offset().top;
-getAQuoteScroll2 = $('#get-a-quote-scroll').offset().top;
-contactScroll2 = $('#contact-scroll').offset().top;
-windowHeight2 = $(window).height();
-windowScroll2 = $(this).scrollTop();
-
 function checkImageSize(){ 
-  if ($('.navbar-brand-name').css('font-size') === '19px'){
+  if ($('.navbar-brand-name').css('font-size') === '20px' && $(".navbar-inverse").hasClass('transparent')) {
+    $('.main-section').css('background-size', '1366px 929px');
+    $(".navbar-inverse .navbar-nav>li>a").css("color", "#000");
+  } else if ($('.navbar-brand-name').css('font-size') === '18px'){
     $('.main-section').css('background-size', '1010px  687px'); 
     $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");  
   } else if ($('.navbar-brand-name').css('font-size') === '17px'){
+    $('.main-section').css('background-size', '1010px  687px');
     $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
-  } else {
-    $('.main-section').css('background-size', '1366px 929px');
-      $(".navbar-inverse .navbar-nav>li>a").css("color", "#000");
-    }
+  }
 };
 
 function checkTextSize(){

@@ -100,6 +100,16 @@ section{
   background-color: #fff !important;
 }
 
+.transparent{
+  background-color: transparent; 
+  border-color: transparent;
+}
+
+.black-navbar {
+  background-color: #000 !important;
+  border-color: #000 !important;
+}
+
 /* Navbar Media Queries */
 
 @media (max-width: 1025px){
@@ -208,13 +218,19 @@ section.main-section{
 
 /* Main Section Media Queries */
 
+@media (max-width: 800px){
+  .navbar-brand-name{
+    font-size: 19px;
+  }
+}
+
 @media (max-width: 767px){
   .brand-name{
     font-size: 50px;
     margin-top: 0px;
   }
   .navbar-brand-name{
-    font-size: 19px;
+    font-size: 18px;
   }
   section.main-section{
     min-height: 600px;
@@ -239,8 +255,13 @@ section.main-section{
 
 @media (max-width: 500px){
   .main-logo{
-    height: 100px;
     margin-top: 370px;
+  }
+  #main-logo{
+    height: 100px;
+  }
+  .navbar-brand-name{
+    font-size: 17px;
   }
 }
 
