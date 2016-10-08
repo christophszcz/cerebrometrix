@@ -100,6 +100,10 @@ section{
   background-color: #fff !important;
 }
 
+.navbar-collapse {
+  padding-right: 24px;
+}
+
 .transparent{
   background-color: transparent; 
   border-color: transparent;
@@ -220,7 +224,7 @@ section.main-section{
 
 @media (max-width: 800px){
   .navbar-brand-name{
-    font-size: 19px;
+    font-size: 20px;
   }
 }
 
