@@ -531,6 +531,20 @@ form textarea:focus {
   outline: none;
 }
 
+/* Quote Section Media Queries */
+
+@media(max-width: 580px){
+  form textarea#project-details-textarea {
+    padding-top: 70px;
+  }
+}
+
+@media(max-width: 400px){
+  form textarea#project-details-textarea {
+    padding-top: 75px;
+  }
+}
+
 /* Contact */
 
 section.contact-section{
