@@ -283,6 +283,7 @@ section.main-section{
     font-size: 30px;
   }
 }
+
 /* About */
 
 section.about-section{ 
@@ -411,6 +412,10 @@ section.about-section{
   min-height: 700px;
 }
 
+.subtitle-section{
+  margin-bottom: 50px;
+}
+     
 /* Quote */
 
 section.quote-section{
