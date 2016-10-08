@@ -1,7 +1,7 @@
 $(document).ready(function(){
     checkSize();
-    checkImageSize();
     checkTextSize();
+    checkImageSize();
     $(window).resize(checkSize);
     $(window).resize(checkImageSize);
     $(window).resize(checkTextSize);
@@ -27,16 +27,16 @@ windowHeight2 = $(window).height();
 windowScroll2 = $(this).scrollTop();
 
 function checkImageSize(){ 
-  if($('.navbar-brand-name').css('font-size') === '19px'){
-    $('.main-section').css('background-size', '768px  522px'); 
+  if ($('.navbar-brand-name').css('font-size') === '19px'){
+    $('.main-section').css('background-size', '1010px  687px'); 
     $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");  
   } else if ($('.navbar-brand-name').css('font-size') === '17px'){
     $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
-  } else if (windowScroll2 > (aboutScroll2 + margin2 - windowHeight2) ){
+  } else {
     $('.main-section').css('background-size', '1366px 929px');
-    $(".navbar-inverse .navbar-nav>li>a").css("color", "#000");
-  }
-}
+      $(".navbar-inverse .navbar-nav>li>a").css("color", "#000");
+    }
+};
 
 function checkTextSize(){
   if($('.navbar-brand-name').css('font-size') === '19px'){

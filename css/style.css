@@ -219,6 +219,9 @@ section.main-section{
   section.main-section{
     min-height: 600px;
   }
+  .main-logo {
+    margin-top: 320px;
+  }
 }
 
 @media (max-width: 700px){
@@ -237,7 +240,7 @@ section.main-section{
 @media (max-width: 500px){
   #main-logo{
     height: 100px;
-    margin-top: 120px;
+    margin-top: 270px;
   }
 }
 
