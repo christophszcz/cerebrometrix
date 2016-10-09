@@ -23,10 +23,10 @@ function checkSize(){
 function whatWeDoCheckSize(){
   if($(".hippocampal-subfield-segmentation-description").css("margin-bottom") === "40px"){
     $(".small-before-hippocampal-subfield-segmentation").insertBefore(".small-after-hippocampal-subfield-segmentation");
-    $(".small-before-chloe").insertBefore(".small-after-chloe");
+    $(".small-before-medial-temporal-lobe-cortex-segmentation").insertBefore(".small-after-medial-temporal-lobe-cortex-segmentation");
   } else {
     $(".small-after-hippocampal-subfield-segmentation").insertBefore(".small-before-hippocampal-subfield-segmentation");
-    $(".small-after-chloe").insertBefore(".small-before-chloe");
+    $(".small-after-medial-temporal-lobe-cortex-segmentation").insertBefore(".small-before-medial-temporal-lobe-cortex-segmentation");
   }
 }
 
