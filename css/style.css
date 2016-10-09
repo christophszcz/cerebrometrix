@@ -422,6 +422,10 @@ section.about-section{
   font-weight: 300;
   text-align: left;
 }
+
+.fake-heading{
+  font-size:20px;
+}
      
 /* Quote */
 
