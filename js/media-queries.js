@@ -25,10 +25,12 @@ function whatWeDoCheckSize(){
     $(".small-before-hippocampal-subfield-segmentation").insertBefore(".small-after-hippocampal-subfield-segmentation");
     $(".small-before-medial-temporal-lobe-cortex-segmentation").insertBefore(".small-after-medial-temporal-lobe-cortex-segmentation");
     $(".small-before-ventricular-segmentation").insertBefore(".small-after-ventricular-segmentation");
+    $(".small-before-lesions-and-brain-tumor-segmentation").insertBefore(".small-after-lesions-and-brain-tumor-segmentation");
   } else {
     $(".small-after-hippocampal-subfield-segmentation").insertBefore(".small-before-hippocampal-subfield-segmentation");
     $(".small-after-medial-temporal-lobe-cortex-segmentation").insertBefore(".small-before-medial-temporal-lobe-cortex-segmentation");
     $(".small-after-ventricular-segmentation").insertBefore(".small-before-ventricular-segmentation");
+    $(".small-after-lesions-and-brain-tumor-segmentation").insertBefore(".small-before-lesions-and-brain-tumor-segmentation");
   }
 }
 

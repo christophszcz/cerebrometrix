@@ -440,6 +440,10 @@ section.about-section{
   margin-bottom: 0px;
 }
 
+.lesions-and-brain-tumor-segmentation-description{
+  margin-bottom: 0px;
+}
+
 /* What We Do Section Media Queries */
 
 @media (max-width: 992px){
@@ -450,6 +454,9 @@ section.about-section{
     margin-bottom: 40px;
   }
   .ventricular-segmentation-description{
+    margin-bottom: 40px;
+  }
+  .lesions-and-brain-tumor-segmentation-description{
     margin-bottom: 40px;
   }
 }
