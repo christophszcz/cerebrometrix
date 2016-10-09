@@ -1,7 +1,7 @@
 $(document).ready(function(){
+  $(window).scroll();
   $(".navbar-inverse").css({"background-color": "transparent" , "border-color": "transparent" });
   $(".navbar").css("box-shadow", "none");
-  $(window).scroll();
 });
 
 $(window).scroll(function() {

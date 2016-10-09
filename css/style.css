@@ -301,7 +301,8 @@ section.about-section{
   font-size: 18px;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  text-align: center;
+  text-align: left;
+  text-indent:40px
 }
 
 .sub-section-icon {
