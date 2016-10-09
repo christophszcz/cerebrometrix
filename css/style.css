@@ -445,6 +445,14 @@ section.about-section{
   margin-bottom: 0px;
 }
 
+#whole_hippocampal{
+  margin-top: 100px;
+}
+
+#hippocampal_subfield{
+  margin-top: 100px;
+}
+     
 /* What We Do Section Media Queries */
 
 @media (max-width: 992px){
