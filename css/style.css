@@ -415,6 +415,13 @@ section.about-section{
 .subtitle-section{
   margin-bottom: 50px;
 }
+
+.explanation-text {
+  font-size: 18px;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-align: left;
+}
      
 /* Quote */
 
