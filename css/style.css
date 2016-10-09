@@ -436,8 +436,8 @@ section.about-section{
   margin-bottom: 0px;
 }
 
-.vivian-description {
-  top:80px;
+.ventricular-segmentation-description{
+  margin-bottom: 0px;
 }
 
 /* What We Do Section Media Queries */
@@ -449,14 +449,8 @@ section.about-section{
   .medial-temporal-lobe-cortex-segmentation-description{
     margin-bottom: 40px;
   }
-  .robert-description{
-    margin-top: 40px;
-  }
-  .daniel-description{
-    margin-top: 40px;
-  }
-  .vivian-description {
-    top: 0px;
+  .ventricular-segmentation-description{
+    margin-bottom: 40px;
   }
 }
 /* Quote */
