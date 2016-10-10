@@ -297,12 +297,11 @@ section.about-section{
   margin-top: 100px;
 }
 
-.description-text {
+.description-subtext {
   font-size: 18px;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  text-align: left;
-  text-indent:40px
+  text-align: center;
 }
 
 .sub-section-icon {
@@ -445,12 +444,28 @@ section.about-section{
   margin-bottom: 0px;
 }
 
-#whole_hippocampal{
+#whole-hippocampal{
   margin-top: 100px;
 }
 
-#hippocampal_subfield{
+#hippocampal-subfield{
   margin-top: 100px;
+}
+
+#media-temporal{
+  margin-top: 40px;
+}
+
+#extra-hippocampal{
+  margin-top: 100px;
+}
+     
+.description-text {
+  font-size: 18px;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-align: left;
+  text-indent:40px
 }
      
 /* What We Do Section Media Queries */
@@ -469,6 +484,22 @@ section.about-section{
     margin-bottom: 40px;
   }
 }
+
+@media (max-width: 991px){
+  #whole-hippocampal{
+    margin-top: 0px;
+  }
+  #hippocampal-subfield{
+    margin-top: 0px;
+  }
+  #media-temporal{
+    margin-top: 0px;
+  }
+  #extra-hippocampal{
+    margin-top: 0px;
+  }
+}
+
 /* Quote */
 
 section.quote-section{
