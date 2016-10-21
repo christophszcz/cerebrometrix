@@ -467,6 +467,10 @@ section.about-section{
   text-align: left;
   text-indent:40px
 }
+
+.document-links{
+  color: #FC053A;
+}
      
 /* What We Do Section Media Queries */
 
@@ -719,3 +723,5 @@ a:hover {
     margin-bottom: 35px;
   }
 }
+
+/* Page Preloader */
