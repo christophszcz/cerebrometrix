@@ -3,12 +3,20 @@ $(document).ready(function(){
   checkTextSize();
   checkImageSize();
   whatWeDoCheckSize();
+  phoneBackground();
 
   $(window).resize(checkSize);
   $(window).resize(checkImageSize);
   $(window).resize(checkTextSize);
   $(window).resize(whatWeDoCheckSize);
+  $(window).resize(phoneBackground);
 });
+
+function phoneBackground(){
+  if($('.navbar-brand-name').css('font-size') === '16px'){
+    $('section.main-section').css('background-size', '750px 687px');
+  }
+}
  
 function checkSize(){
   if($(".chris-description").css("margin-bottom") === "40px"){
