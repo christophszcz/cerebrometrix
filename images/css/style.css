@@ -415,12 +415,6 @@ section.about-section{
   }
 }
 
-@media (max-width: 405px){
-  .description-text{
-    text-align: center;
-  }
-}
-
 /* What We Do */
 
 .what-we-do-section{
@@ -659,7 +653,7 @@ form textarea:focus {
 /* Contact */
 
 section.contact-section{
-  background-image: url('../images/brandenburg_gate.jpeg');
+  background-image: url('../images/brandenburg_gate.jpg');
   min-height:700px;
   background-size: 1366px 1004px;
   /*top: 700px;*/

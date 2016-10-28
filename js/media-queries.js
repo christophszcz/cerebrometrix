@@ -6,6 +6,7 @@ $(document).ready(function(){
   iPadMainBackground();
   iPhoneFiveMainBackground();
    
+
   $(window).resize(checkSize);
   $(window).resize(checkImageSize);
   $(window).resize(checkTextSize);
