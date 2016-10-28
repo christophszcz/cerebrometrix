@@ -348,6 +348,14 @@ section.about-section{
   margin-top: 125px;
 }*/
 
+.description-text{
+  font-size: 18px;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-align: left;
+  text-indent:40px
+}
+
 .name{
   margin-top: 10px;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -478,7 +486,7 @@ section.about-section{
   margin-top: 100px;
 }
      
-.description-text {
+.description-text-what-we-do {
   font-size: 18px;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
