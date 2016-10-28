@@ -168,7 +168,7 @@ section{
 
 section.main-section{
   /*width: 100%;*/
-  min-height:700px;
+  /* min-height:800px;*/
   background-image: url('../images/main_photo.jpeg');
   background-size: 1366px 929px;
   /*top: 700px;*/
@@ -236,9 +236,6 @@ section.main-section{
   .navbar-brand-name{
     font-size: 18px;
   }
-  section.main-section{
-    min-height: 600px;
-  }
   .main-logo {
     margin-top: 320px;
   }
@@ -287,6 +284,15 @@ section.main-section{
 @media (max-width: 350px){
   .navbar-brand-name {
     font-size: 16px;
+  }
+}
+
+@media (max-height: 1024px) and (max-width: 768px)  {   
+  .main-logo{
+    margin-top: 400px;
+  }
+  section.main-section{
+    min-height: 1100px;
   }
 }
 

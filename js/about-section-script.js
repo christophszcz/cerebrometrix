@@ -42,12 +42,12 @@ $(window).scroll(function() {
   // }
 
   if (windowScroll >= (aboutScroll + margin - windowHeight) && windowScroll <= (ourTeamScroll + marginOurTeam - windowHeight)){
-    $('#efficient-section').delay( 1000 ).fadeIn(3000);
-    $('#manual-id-section').delay( 2000 ).fadeIn(3000);
-    $('#cost-effective-section').delay( 3000 ).fadeIn(3000);
-    $('#experts-section').delay( 4000 ).fadeIn(3000);
+    $('#efficient-section').delay( 700 ).fadeIn(3000);
+    $('#manual-id-section').delay( 1400 ).fadeIn(3000);
+    $('#cost-effective-section').delay( 2100 ).fadeIn(3000);
+    $('#experts-section').delay( 2800 ).fadeIn(3000);
   }
   if (windowScroll >= (whatWeDoScroll + margin - windowHeight) && windowScroll <= (getAQuoteScroll + marginGetAQuote - windowHeight)){
-    $('.what-we-do-title').delay( 500 ).fadeIn(3000);
+    $('.what-we-do-title').delay( 500 ).fadeIn(2000);
   }
 });

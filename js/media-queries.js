@@ -1,20 +1,28 @@
 $(document).ready(function(){
   checkSize();
   checkTextSize();
-  checkImageSize();
   whatWeDoCheckSize();
-  phoneBackground();
+  iPadMainBackground();
+  iPhoneFiveMainBackground();
+  checkImageSize();
 
   $(window).resize(checkSize);
   $(window).resize(checkImageSize);
   $(window).resize(checkTextSize);
+  $(window).resize(iPadMainBackground);
+  $(window).resize(iPhoneFiveMainBackground);
   $(window).resize(whatWeDoCheckSize);
-  $(window).resize(phoneBackground);
 });
 
-function phoneBackground(){
+function iPhoneFiveMainBackground(){
   if($('.navbar-brand-name').css('font-size') === '16px'){
     $('section.main-section').css('background-size', '750px 687px');
+  }
+}
+
+function iPadMainBackground(){
+  if($('.main-logo').css('margin-top') === '400px'){
+    $('section.main-section').css('background-size', '1366px 1100px');  
   }
 }
  
@@ -49,10 +57,10 @@ function checkImageSize(){
   }else if ($('.navbar-brand-name').css('font-size') === '20px') {
     $('.main-section').css('background-size', '1366px 929px');
   } else if ($('.navbar-brand-name').css('font-size') === '18px'){
-    $('.main-section').css('background-size', '1010px  687px'); 
+    $('.main-section').css('background-size', '1010px  750px'); 
     $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");  
   } else if ($('.navbar-brand-name').css('font-size') === '17px'){
-    $('.main-section').css('background-size', '1010px  687px');
+    $('.main-section').css('background-size', '1010px  750px');
     $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
   }
 };
