@@ -736,4 +736,8 @@ a:hover {
   }
 }
 
-/* Page Preloader */
+@media (min-height: 1024px) and (max-height: 1024px) and (min-width: 768px) and (max-width: 768px)  {   
+  section.contact-section{
+    min-height: 1004px;
+  }
+}
