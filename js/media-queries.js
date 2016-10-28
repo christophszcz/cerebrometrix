@@ -2,16 +2,16 @@ $(document).ready(function(){
   checkSize();
   checkTextSize();
   whatWeDoCheckSize();
+  checkImageSize();
   iPadMainBackground();
   iPhoneFiveMainBackground();
-  checkImageSize();
-
+   
   $(window).resize(checkSize);
   $(window).resize(checkImageSize);
   $(window).resize(checkTextSize);
+  $(window).resize(whatWeDoCheckSize);
   $(window).resize(iPadMainBackground);
   $(window).resize(iPhoneFiveMainBackground);
-  $(window).resize(whatWeDoCheckSize);
 });
 
 function iPhoneFiveMainBackground(){
