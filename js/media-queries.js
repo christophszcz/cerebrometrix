@@ -16,7 +16,7 @@ $(document).ready(function(){
 });
 
 function iPhoneFiveMainBackground(){
-  if($('.navbar-brand-name').css('font-size') === '16px'){
+  if($('.navbar-brand-name').css('font-size') === '18px'){
     $('section.main-section').css('background-size', '750px 687px');
   }
 }
