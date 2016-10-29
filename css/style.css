@@ -743,6 +743,12 @@ a:hover {
 
 /* Contact Section Media Queries */
 
+@media (max-width: 1440px){
+  .navbar-brand-name{
+    font-size: 22px;
+  }
+}
+
 @media(max-width: 991px){
   .social-icons {
     margin-top: 30px;
