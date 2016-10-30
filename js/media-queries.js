@@ -5,7 +5,7 @@ $(document).ready(function(){
   checkImageSize();
   iPadMainBackground();
   iPhoneFiveMainBackground();
-  iMacView();
+  largeLaptop();
   fourKView()
    
   $(window).resize(checkSize);
@@ -14,7 +14,7 @@ $(document).ready(function(){
   $(window).resize(whatWeDoCheckSize);
   $(window).resize(iPadMainBackground);
   $(window).resize(iPhoneFiveMainBackground);
-  $(window).resize(iMacView);
+  $(window).resize(largeLaptop);
   $(window).resize(fourKView);
 });
 
@@ -30,7 +30,7 @@ function iPadMainBackground(){
   }
 }
 
-function iMacView(){
+function largeLaptop(){
   if($('.navbar-brand-name').css('font-size') === '22px'){
     $('section.contact-section').css('background-size', '1440px 1004px');
   }
@@ -38,6 +38,7 @@ function iMacView(){
 
 function fourKView(){
   if($('.navbar-brand-name').css('font-size') === '24px'){
+    $('section.main-section').css('background-size','2560px 716px');
     $('section.contact-section').css('background-size', '2560px 1004px');
   }
 }
