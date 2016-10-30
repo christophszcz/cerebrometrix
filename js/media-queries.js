@@ -6,6 +6,7 @@ $(document).ready(function(){
   iPadMainBackground();
   iPhoneFiveMainBackground();
   iMacView();
+  fourKView()
    
   $(window).resize(checkSize);
   $(window).resize(checkImageSize);
@@ -14,6 +15,7 @@ $(document).ready(function(){
   $(window).resize(iPadMainBackground);
   $(window).resize(iPhoneFiveMainBackground);
   $(window).resize(iMacView);
+  $(window).resize(fourKView);
 });
 
 function iPhoneFiveMainBackground(){
@@ -31,6 +33,12 @@ function iPadMainBackground(){
 function iMacView(){
   if($('.navbar-brand-name').css('font-size') === '22px'){
     $('section.contact-section').css('background-size', '1440px 1004px');
+  }
+}
+
+function fourKView(){
+  if($('.navbar-brand-name').css('font-size') === '24px'){
+    $('section.contact-section').css('background-size', '2560px 1004px');
   }
 }
  

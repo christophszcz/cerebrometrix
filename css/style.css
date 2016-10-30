@@ -743,6 +743,12 @@ a:hover {
 
 /* Contact Section Media Queries */
 
+@media (max-width: 2560px){
+  .navbar-brand-name{
+    font-size: 24px;
+  }
+}
+
 @media (max-width: 1440px){
   .navbar-brand-name{
     font-size: 22px;
