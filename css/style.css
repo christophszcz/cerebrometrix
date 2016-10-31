@@ -131,6 +131,9 @@ section{
   .navbar-right {
     margin-right: -55px;
   }
+  .page-scroll {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 840px){
