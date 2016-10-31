@@ -23,6 +23,7 @@ $(window).scroll(function() {
     $(".navbar-brand-name").css("color", "#000");
     $(".navbar-header .navbar-toggle .icon-bar").css("background-color", "#000"); 
     $(".navbar-header .navbar-toggle:hover .icon-bar").css("background-color", "#fff");
+    $('.navbar').css('transition' ,  'box-shadow 1s, background-color 1s');
   } else if (windowScroll >= (aboutScroll + margin - windowHeight)){
     $('.navbar-inverse').removeClass('transparent');
     $('.navbar-inverse').addClass('black-navbar');
