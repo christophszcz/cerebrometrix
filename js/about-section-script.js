@@ -1,8 +1,15 @@
 $(document).ready(function(){
   $(window).scroll();
-  // $(".navbar-inverse").css({"background-color": "transparent" , "border-color": "transparent" });
-  // $(".navbar").css("box-shadow", "none");
-  
+  windowScroll = $(this).scrollTop();
+  if (windowScroll >= 321){
+    $('.navbar-inverse').removeClass('transparent');
+    $('.navbar-inverse').addClass('black-navbar');
+    $(".navbar").css("box-shadow", "0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2)");
+    $(".navbar-inverse .navbar-nav>li>a").css("color", "#fff");
+    $(".navbar-brand-name").css("color", "#fff");
+    $(".navbar-inverse .navbar-toggle .icon-bar").css("background-color", "#fff");
+    $(".navbar-header .navbar-toggle:hover .icon-bar").css("background-color", "#fff");  
+  }
 });
 
 $(window).scroll(function() {
