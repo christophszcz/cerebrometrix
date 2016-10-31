@@ -1,7 +1,18 @@
 $(document).ready(function(){
-  $(window).scroll();
-  $(".navbar-inverse").css({"background-color": "transparent" , "border-color": "transparent" });
-  $(".navbar").css("box-shadow", "none");
+  // $(window).scroll();
+  // $(".navbar-inverse").css({"background-color": "transparent" , "border-color": "transparent" });
+  // $(".navbar").css("box-shadow", "none");
+  windowScroll = $(this).scrollTop(); 
+  if ( windowScroll === 0) {
+    $('.navbar-inverse').removeClass('black-navbar');
+    $('.navbar-inverse').addClass('transparent');
+    $(".navbar").css("box-shadow", "none");
+    $(".navbar-inverse .navbar-nav>li>a").css("color", "#000");
+    $(".navbar-brand-name").css("color", "#000");
+    $(".navbar-header .navbar-toggle .icon-bar").css("background-color", "#000"); 
+    $(".navbar-header .navbar-toggle:hover .icon-bar").css("background-color", "#fff");
+  }
+  
 });
 
 $(window).scroll(function() {
@@ -14,7 +25,8 @@ $(window).scroll(function() {
     marginGetAQuote = $('#get-a-quote-scroll').outerHeight(),
     windowHeight = $(window).height(),
     windowScroll = $(this).scrollTop();
-  if ( windowScroll < (aboutScroll + margin - windowHeight)){
+  // if ( windowScroll < (aboutScroll + margin - windowHeight)){
+  if ( windowScroll === 0) {
     $('.navbar-inverse').removeClass('black-navbar');
     $('.navbar-inverse').addClass('transparent');
     $(".navbar").css("box-shadow", "none");
