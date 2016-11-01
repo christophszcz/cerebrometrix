@@ -227,13 +227,13 @@ section.main-section{
 
 /* Main Section Media Queries */
 
-@media (max-width: 2560px){
+@media (min-width: 2560px) and (max-width: 3000px){
   .navbar-brand-name{
     font-size: 24px;
   }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) and (max-width: 2559px) {
   .navbar-brand-name{
     font-size: 22px;
   }
