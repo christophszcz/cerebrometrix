@@ -30,7 +30,9 @@ section{
 
 .horizontal{
   width: 150px;
-  border-top: 4px double #FC053A;
+  border-color: #FC053A;
+  border-style: double;
+  border-width: 0px 0px 3px 0px; 
 }
 
 .description{
