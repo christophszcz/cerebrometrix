@@ -227,13 +227,13 @@ section.main-section{
 
 /* Main Section Media Queries */
 
-@media (max-width: 2560px){
+@media (min-width: 2560px) and (max-width: 3000px){
   .navbar-brand-name{
     font-size: 24px;
   }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) and (max-width: 2559px) {
   .navbar-brand-name{
     font-size: 22px;
   }
@@ -400,7 +400,12 @@ section.about-section{
 
 .horizontal-short{
   width: 90px;
-  border-top: 4px double #FC053A;
+  /*border-top: 4px double #FC053A;*/
+  border-color: #FC053A;
+  border-style: double;
+  border-width: 0px 0px 3px 0px; 
+  /*border-right-width: 0px;
+  border-left-width: 0px;*/
 }
 
 .last-team-member{
