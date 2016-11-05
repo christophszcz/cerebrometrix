@@ -3,18 +3,14 @@ $(document).ready(function(){
   checkTextSize();
   whatWeDoCheckSize();
   checkImageSize();
-  // iPadMainBackground();
   iPhoneFiveMainBackground();
-  // largeLaptop();
   largeScreenViewing();
    
   $(window).resize(checkSize);
   $(window).resize(checkImageSize);
   $(window).resize(checkTextSize);
   $(window).resize(whatWeDoCheckSize);
-  // $(window).resize(iPadMainBackground);
   $(window).resize(iPhoneFiveMainBackground);
-  // $(window).resize(largeLaptop);
   $(window).resize(largeScreenViewing);
 });
 
@@ -23,19 +19,6 @@ function iPhoneFiveMainBackground(){
     $('section.main-section').css('background-size', '750px 687px');
   }
 }
-
-// function iPadMainBackground(){
-//   if($('.main-logo').css('margin-top') === '400px'){
-//     $('section.main-section').css('background-size', '1366px 1100px');  
-//   }
-// }
-
-// function largeLaptop(){
-//   if($('.navbar-brand-name').css('font-size') === '22px'){
-//     // $('section.contact-section').css('background-size', '1440px 1004px');
-//     $('section.contact-section').css('background-size', '2560px 1004px');
-//   }
-// }
 
 function largeScreenViewing(){
   if($('.main-logo').css('margin-top') === '400px'){
