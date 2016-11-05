@@ -25,9 +25,10 @@ function largeScreenViewing(){
     $('section.main-section').css('background-size', '1366px 1100px');  
   } else if($('.navbar-brand-name').css('font-size') === '22px'){
     // $('section.contact-section').css('background-size', '1440px 1004px');
+    $('.main-section').css('background-size', '2560px 900px');
     $('section.contact-section').css('background-size', '2560px 1004px');
   } else if($('.navbar-brand-name').css('font-size') === '24px'){
-    $('section.main-section').css('background-size','2560px 716px');
+    $('section.main-section').css('background-size','2652px 900px');
     $('section.contact-section').css('background-size', '2652px 1004px');
   } else {
     $('section.contact-section').css('background-size', '1440px 1004px');
