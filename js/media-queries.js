@@ -3,19 +3,19 @@ $(document).ready(function(){
   checkTextSize();
   whatWeDoCheckSize();
   checkImageSize();
-  iPadMainBackground();
+  // iPadMainBackground();
   iPhoneFiveMainBackground();
-  largeLaptop();
-  fourKView()
+  // largeLaptop();
+  largeScreenViewing();
    
   $(window).resize(checkSize);
   $(window).resize(checkImageSize);
   $(window).resize(checkTextSize);
   $(window).resize(whatWeDoCheckSize);
-  $(window).resize(iPadMainBackground);
+  // $(window).resize(iPadMainBackground);
   $(window).resize(iPhoneFiveMainBackground);
-  $(window).resize(largeLaptop);
-  $(window).resize(fourKView);
+  // $(window).resize(largeLaptop);
+  $(window).resize(largeScreenViewing);
 });
 
 function iPhoneFiveMainBackground(){
@@ -24,22 +24,30 @@ function iPhoneFiveMainBackground(){
   }
 }
 
-function iPadMainBackground(){
+// function iPadMainBackground(){
+//   if($('.main-logo').css('margin-top') === '400px'){
+//     $('section.main-section').css('background-size', '1366px 1100px');  
+//   }
+// }
+
+// function largeLaptop(){
+//   if($('.navbar-brand-name').css('font-size') === '22px'){
+//     // $('section.contact-section').css('background-size', '1440px 1004px');
+//     $('section.contact-section').css('background-size', '2560px 1004px');
+//   }
+// }
+
+function largeScreenViewing(){
   if($('.main-logo').css('margin-top') === '400px'){
     $('section.main-section').css('background-size', '1366px 1100px');  
-  }
-}
-
-function largeLaptop(){
-  if($('.navbar-brand-name').css('font-size') === '22px'){
-    $('section.contact-section').css('background-size', '1440px 1004px');
-  }
-}
-
-function fourKView(){
-  if($('.navbar-brand-name').css('font-size') === '24px'){
-    $('section.main-section').css('background-size','2560px 716px');
+  } else if($('.navbar-brand-name').css('font-size') === '22px'){
+    // $('section.contact-section').css('background-size', '1440px 1004px');
     $('section.contact-section').css('background-size', '2560px 1004px');
+  } else if($('.navbar-brand-name').css('font-size') === '24px'){
+    $('section.main-section').css('background-size','2560px 716px');
+    $('section.contact-section').css('background-size', '2652px 1004px');
+  } else {
+    $('section.contact-section').css('background-size', '1440px 1004px');
   }
 }
  
