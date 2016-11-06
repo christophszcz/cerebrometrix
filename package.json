@@ -1,0 +1,26 @@
+{
+  "name": "cervometrixproject",
+  "version": "1.0.0",
+  "description": "Cerebrometrix provides fast, efficient, and reliable manual brain segmentations for Magnetic Resonance Images (MRI).<br /> [http://cerebrometrix.com](http://cerebrometrix.com)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christophszcz/cervometrix.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christophszcz/cervometrix/issues"
+  },
+  "homepage": "https://github.com/christophszcz/cervometrix#readme",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
