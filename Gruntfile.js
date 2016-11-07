@@ -35,10 +35,22 @@ module.exports = function (grunt){
 					ext: '.min.css'
 				}]
 			}
-		}
+		},
+
+		imagemin: {                          
+	    dynamic: {                         
+	      files: [{
+	        expand: true,                  
+	        cwd: 'images/',                   
+	        src: ['**/*.{png,jpg,jpeg}'],   
+	        dest: 'dist/'                  
+	      }]
+	    }
+	  }
 	});
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
 };	
