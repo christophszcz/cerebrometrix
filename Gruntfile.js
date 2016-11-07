@@ -1,8 +1,6 @@
 module.exports = function (grunt){
 	grunt.initConfig({
 
-		 
-
 	  concat: {
 	    js: {
 	      src: ['js/arrow.js' , 'js/contact-form-script.js', 'js/about-section-script.js', 'js/scroll-finish.js', 'js/media-queries.js', 'js/navbar-activation.js'],
@@ -25,9 +23,22 @@ module.exports = function (grunt){
 					'js/scripts.min.js' : ['build/scripts.js']
 				}
 			}
+		},
+
+		cssmin: {
+			my_target:{
+				files: [{
+					expand: true,
+					cwd: 'css/',
+					src: ['*.css', '!*.min.css'],
+					dest: 'css/',
+					ext: '.min.css'
+				}]
+			}
 		}
 	});
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 };	
