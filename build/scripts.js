@@ -1,66 +1,15 @@
 $(document).ready(function(){
-  $(window).scroll();
-  windowScroll = $(this).scrollTop();
-  if (windowScroll >= 321){
-    $('.navbar-inverse').removeClass('transparent');
-    $('.navbar-inverse').addClass('black-navbar');
-    $(".navbar").css("box-shadow", "0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2)");
-    $(".navbar-inverse .navbar-nav>li>a").css("color", "#fff");
-    $(".navbar-brand-name").css("color", "#fff");
-    $(".navbar-inverse .navbar-toggle .icon-bar").css("background-color", "#fff");
-    $(".navbar-header .navbar-toggle:hover .icon-bar").css("background-color", "#fff");  
-  }
+
+  $('.btn-circle.btn-lg').hover(function(){
+    $('.glyphicon-menu-down').addClass('shadedDownArrow');
+    },
+    function(){       
+    $('.glyphicon-menu-down').removeClass('shadedDownArrow');   
+    } 
+  );
 });
 
-$(window).scroll(function() {
-  var aboutScroll = $('#about-scroll').offset().top,
-    ourTeamScroll = $('#our-team-scroll').offset().top,
-    whatWeDoScroll = $('#what-we-do-scroll').offset().top,
-    getAQuoteScroll = $('#get-a-quote-scroll').offset().top,
-    margin = $('#about-scroll').outerHeight(),
-    marginOurTeam = $('#our-team-scroll').outerHeight(),
-    marginGetAQuote = $('#get-a-quote-scroll').outerHeight(),
-    windowHeight = $(window).height(),
-    windowScroll = $(this).scrollTop();
-  if ( windowScroll < (aboutScroll + margin - windowHeight)){
-    $('.navbar-inverse').removeClass('black-navbar');
-    $('.navbar-inverse').addClass('transparent');
-    $(".navbar").css("box-shadow", "none");
-    $(".navbar-inverse .navbar-nav>li>a").css("color", "#000");
-    $(".navbar-brand-name").css("color", "#000");
-    $(".navbar-header .navbar-toggle .icon-bar").css("background-color", "#000"); 
-    $(".navbar-header .navbar-toggle:hover .icon-bar").css("background-color", "#fff");
-    $('.navbar').css('transition' ,  'box-shadow 1s, background-color 1s');
-  } else if (windowScroll >= (aboutScroll + margin - windowHeight)){
-    $('.navbar-inverse').removeClass('transparent');
-    $('.navbar-inverse').addClass('black-navbar');
-    $(".navbar").css("box-shadow", "0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2)");
-    $(".navbar-inverse .navbar-nav>li>a").css("color", "#fff");
-    $(".navbar-brand-name").css("color", "#fff");
-    $(".navbar-inverse .navbar-toggle .icon-bar").css("background-color", "#fff");
-    $(".navbar-header .navbar-toggle:hover .icon-bar").css("background-color", "#fff");  
-  }
-
-  //Show toggle menu if it the link color turns black after scrolling down.
-  if ( (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '78px') || (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '50px') || (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '30px')) {
-    $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
-  }
-
-  // if ((windowScroll >= (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') !== '78px') || (windowScroll >= (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') !== '50px') || (windowScroll >= (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') !== '30px') ){
-  //   $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
-  // }
-
-  if (windowScroll >= (aboutScroll + margin - windowHeight) && windowScroll <= (ourTeamScroll + marginOurTeam - windowHeight)){
-    $('#efficient-section').delay( 700 ).fadeIn(3000);
-    $('#manual-id-section').delay( 1400 ).fadeIn(3000);
-    $('#cost-effective-section').delay( 2100 ).fadeIn(3000);
-    $('#experts-section').delay( 2800 ).fadeIn(3000);
-  }
-  if (windowScroll >= (whatWeDoScroll + margin - windowHeight) && windowScroll <= (getAQuoteScroll + marginGetAQuote - windowHeight)){
-    $('.what-we-do-title').delay( 500 ).fadeIn(2000);
-  }
-});
-
+ 
 $(document).ready(function(){
   $('#efficient-section').fadeOut();
   $('#manual-id-section').fadeOut();
@@ -128,6 +77,82 @@ $(document).ready(function(){
     }
   });
 });
+$(document).ready(function(){
+  $(window).scroll();
+  windowScroll = $(this).scrollTop();
+  if (windowScroll >= 321){
+    $('.navbar-inverse').removeClass('transparent');
+    $('.navbar-inverse').addClass('black-navbar');
+    $(".navbar").css("box-shadow", "0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2)");
+    $(".navbar-inverse .navbar-nav>li>a").css("color", "#fff");
+    $(".navbar-brand-name").css("color", "#fff");
+    $(".navbar-inverse .navbar-toggle .icon-bar").css("background-color", "#fff");
+    $(".navbar-header .navbar-toggle:hover .icon-bar").css("background-color", "#fff");  
+  }
+});
+
+$(window).scroll(function() {
+  var aboutScroll = $('#about-scroll').offset().top,
+    ourTeamScroll = $('#our-team-scroll').offset().top,
+    whatWeDoScroll = $('#what-we-do-scroll').offset().top,
+    getAQuoteScroll = $('#get-a-quote-scroll').offset().top,
+    margin = $('#about-scroll').outerHeight(),
+    marginOurTeam = $('#our-team-scroll').outerHeight(),
+    marginGetAQuote = $('#get-a-quote-scroll').outerHeight(),
+    windowHeight = $(window).height(),
+    windowScroll = $(this).scrollTop();
+  if ( windowScroll < (aboutScroll + margin - windowHeight)){
+    $('.navbar-inverse').removeClass('black-navbar');
+    $('.navbar-inverse').addClass('transparent');
+    $(".navbar").css("box-shadow", "none");
+    $(".navbar-inverse .navbar-nav>li>a").css("color", "#000");
+    $(".navbar-brand-name").css("color", "#000");
+    $(".navbar-header .navbar-toggle .icon-bar").css("background-color", "#000"); 
+    $(".navbar-header .navbar-toggle:hover .icon-bar").css("background-color", "#fff");
+    $('.navbar').css('transition' ,  'box-shadow 1s, background-color 1s');
+  } else if (windowScroll >= (aboutScroll + margin - windowHeight)){
+    $('.navbar-inverse').removeClass('transparent');
+    $('.navbar-inverse').addClass('black-navbar');
+    $(".navbar").css("box-shadow", "0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2)");
+    $(".navbar-inverse .navbar-nav>li>a").css("color", "#fff");
+    $(".navbar-brand-name").css("color", "#fff");
+    $(".navbar-inverse .navbar-toggle .icon-bar").css("background-color", "#fff");
+    $(".navbar-header .navbar-toggle:hover .icon-bar").css("background-color", "#fff");  
+  }
+
+  //Show toggle menu if it the link color turns black after scrolling down.
+  if ( (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '78px') || (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '50px') || (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '30px')) {
+    $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
+  }
+
+  // if ((windowScroll >= (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') !== '78px') || (windowScroll >= (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') !== '50px') || (windowScroll >= (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') !== '30px') ){
+  //   $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
+  // }
+
+  if (windowScroll >= (aboutScroll + margin - windowHeight) && windowScroll <= (ourTeamScroll + marginOurTeam - windowHeight)){
+    $('#efficient-section').delay( 700 ).fadeIn(3000);
+    $('#manual-id-section').delay( 1400 ).fadeIn(3000);
+    $('#cost-effective-section').delay( 2100 ).fadeIn(3000);
+    $('#experts-section').delay( 2800 ).fadeIn(3000);
+  }
+  if (windowScroll >= (whatWeDoScroll + margin - windowHeight) && windowScroll <= (getAQuoteScroll + marginGetAQuote - windowHeight)){
+    $('.what-we-do-title').delay( 500 ).fadeIn(2000);
+  }
+});
+
+$(function(){
+  $('a[href^="#"]').click(function(e){
+    var target = $(this).attr('href');
+    var strip = target.slice(1);
+    var anchor = $("a[name='" + strip + "']");
+
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: anchor.offset().top
+    }, 'slow');
+  });
+});
+
 $(document).ready(function(){
   checkSize();
   checkTextSize();
@@ -297,26 +322,4 @@ var aboutScroll = $('#about-scroll').offset().top,
     $("li:nth-child(4)").removeClass('active');
     $("li:nth-child(5)").addClass('active');
   }
-});
-$(document).ready(function(){
-
-  $('.btn-circle.btn-lg').hover(function(){
-    $('.glyphicon-menu-down').addClass('shadedDownArrow');
-    },
-    function(){       
-    $('.glyphicon-menu-down').removeClass('shadedDownArrow');   
-    } 
-  );
-});
-$(function(){
-  $('a[href^="#"]').click(function(e){
-    var target = $(this).attr('href');
-    var strip = target.slice(1);
-    var anchor = $("a[name='" + strip + "']");
-
-    e.preventDefault();
-    $('html, body').animate({
-      scrollTop: anchor.offset().top
-    }, 'slow');
-  });
 });
