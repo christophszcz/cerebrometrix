@@ -15,7 +15,7 @@ $(document).ready(function(){
 });
 
 function iPhoneFiveMainBackground(){
-  if($('.navbar-brand-name').css('font-size') === '18px'){
+  if($('.navbar-brand-name').css('font-size') === '18px' || $('.navbar-brand-name').css('font-size') === '17px'){
     $('section.main-section').css('background-size', '750px 687px');
   }
 }
@@ -69,7 +69,7 @@ function checkImageSize(){
     $('.main-section').css('background-size', '1010px  750px'); 
     $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");  
   } else if ($('.navbar-brand-name').css('font-size') === '17px'){
-    $('.main-section').css('background-size', '1010px  750px');
+    // $('.main-section').css('background-size', '1010px  750px');
     $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
   }
 };
