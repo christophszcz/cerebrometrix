@@ -15,7 +15,6 @@ $(document).ready(function(){
   $('#manual-id-section').fadeOut();
   $('#cost-effective-section').fadeOut();
   $('#experts-section').fadeOut();
-  $('.what-we-do-title').fadeOut();
 
   $('#name-input').keypress(function(){
     if ($(this).val().length > 0) {
@@ -135,9 +134,7 @@ $(window).scroll(function() {
     $('#cost-effective-section').delay( 2100 ).fadeIn(3000);
     $('#experts-section').delay( 2800 ).fadeIn(3000);
   }
-  if (windowScroll >= (whatWeDoScroll + margin - windowHeight) && windowScroll <= (getAQuoteScroll + marginGetAQuote - windowHeight)){
-    $('.what-we-do-title').delay( 500 ).fadeIn(2000);
-  }
+ 
 });
 
 $(function(){

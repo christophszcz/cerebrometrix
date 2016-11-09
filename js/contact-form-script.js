@@ -3,7 +3,6 @@ $(document).ready(function(){
   $('#manual-id-section').fadeOut();
   $('#cost-effective-section').fadeOut();
   $('#experts-section').fadeOut();
-  $('.what-we-do-title').fadeOut();
 
   $('#name-input').keypress(function(){
     if ($(this).val().length > 0) {
