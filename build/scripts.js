@@ -88,7 +88,20 @@ $(document).ready(function(){
     $(".navbar-inverse .navbar-toggle .icon-bar").css("background-color", "#fff");
     $(".navbar-header .navbar-toggle:hover .icon-bar").css("background-color", "#fff");  
   }
+
+  // Resizing the browser while viewing the main section keeps the nav items white
+  $(window).resize(function (){
+    aboutScroll = $('#about-scroll').offset().top;
+    margin = $('#about-scroll').outerHeight();
+    windowHeight = $(window).height();
+    windowScroll = $(this).scrollTop();
+    if ( windowScroll < (aboutScroll + margin - windowHeight) && $(".navbar-inverse").hasClass('transparent') && ($('.navbar-brand-name').css('font-size') === '18px' || $('.navbar-brand-name').css('font-size') === '17px')){
+      $(".nav-link").css("color", "#fff"); 
+    }
+  });
 });
+
+ 
 
 $(window).scroll(function() {
   var aboutScroll = $('#about-scroll').offset().top,
@@ -125,9 +138,12 @@ $(window).scroll(function() {
   }
 
   //Show toggle menu if it the link color turns black after scrolling down.
-  if ( (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '78px') || (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '50px') || (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '30px')) {
-    $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
+  function keepWhiteIfSizeChange(){
+    if ( (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '78px') || (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '50px') || (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '30px')) {
+      $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
+    }  
   }
+  
 
   // if ((windowScroll >= (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') !== '78px') || (windowScroll >= (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') !== '50px') || (windowScroll >= (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') !== '30px') ){
   //   $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
