@@ -120,10 +120,10 @@ $(window).scroll(function() {
   }
 
   //Show toggle mennu items turn white if the links were black during smaller screen and on main section
-  if ( windowScroll < (aboutScroll + margin - windowHeight) && $(".navbar-inverse").hasClass('transparent') ){
+  if ( windowScroll < (aboutScroll + margin - windowHeight) && $(".navbar-inverse").hasClass('transparent') && ($('.navbar-brand-name').css('font-size') === '18px' || $('.navbar-brand-name').css('font-size') === '17px')){
     $(".nav-link").css("color", "#fff"); 
   }
-  
+
   //Show toggle menu if it the link color turns black after scrolling down.
   if ( (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '78px') || (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '50px') || (windowScroll < (aboutScroll + margin - windowHeight) && $('.brand-name').css('font-size') === '30px')) {
     $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
