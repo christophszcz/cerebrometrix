@@ -67,7 +67,7 @@ function checkImageSize(){
     $('.main-section').css('background-size', '1366px 929px');
   } else if ($('.navbar-brand-name').css('font-size') === '18px'){
     $('.main-section').css('background-size', '1010px  750px'); 
-    $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");  
+    // $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");  
   } else if ($('.navbar-brand-name').css('font-size') === '17px'){
     // $('.main-section').css('background-size', '1010px  750px');
     $(".navbar-inverse .navbar-nav>li>a").css("color", "!important #fff");
