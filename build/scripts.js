@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   $('.btn-circle.btn-lg').hover(function(){
     $('.glyphicon-menu-down').addClass('shadedDownArrow');
     },
@@ -89,7 +88,7 @@ $(document).ready(function(){
     $(".navbar-header .navbar-toggle:hover .icon-bar").css("background-color", "#fff");  
   }
 
-  // Resizing the browser while viewing the main section keeps the nav items white
+  // Resizing the browser while viewing the main section keeps the nav items white.
   $(window).resize(function (){
     aboutScroll = $('#about-scroll').offset().top;
     margin = $('#about-scroll').outerHeight();
@@ -250,7 +249,7 @@ function checkImageSize(){
 function checkTextSize(){
   if($('.navbar-brand-name').css('font-size') === '19px'){
     $(".project-details-label").css('font-size', '12px');
-  } else if($('.navbar-brand-name').css('font-size') === '17px'){
+  } else if($('.navbar-brand-name').css('font-size') === '18px' || $('.navbar-brand-name').css('font-size') === '17px'){
     $(".project-details-label").css('font-size', '10px');
   } else{
     $(".project-details-label").css('font-size', '14px'); 
