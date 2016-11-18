@@ -1,5 +1,7 @@
 $(document).ready(function(){
   $(window).scroll();
+  startNavItems();
+
   windowScroll = $(this).scrollTop();
   if (windowScroll >= 321){
     $('.navbar-inverse').removeClass('transparent');
@@ -11,8 +13,12 @@ $(document).ready(function(){
     $(".navbar-header .navbar-toggle:hover .icon-bar").css("background-color", "#fff");  
   }
 
+  $(window).resize(showingNavItems);
+});
+  
   // Resizing the browser while viewing the main section keeps the nav items white.
-  $(window).resize(function (){
+
+  function showingNavItems(){
     aboutScroll = $('#about-scroll').offset().top;
     margin = $('#about-scroll').outerHeight();
     windowHeight = $(window).height();
@@ -20,9 +26,13 @@ $(document).ready(function(){
     if ( windowScroll < (aboutScroll + margin - windowHeight) && $(".navbar-inverse").hasClass('transparent') && ($('.navbar-brand-name').css('font-size') === '18px' || $('.navbar-brand-name').css('font-size') === '17px')){
       $(".nav-link").css("color", "#fff"); 
     }
-  });
-});
+  }
 
+  function startNavItems(){
+    if ( $('.navbar-brand-name').css('font-size') === '18px' || $('.navbar-brand-name').css('font-size') === '17px'){
+      $(".nav-link").css("color", "#fff"); 
+    }
+  }
  
 
 $(window).scroll(function() {

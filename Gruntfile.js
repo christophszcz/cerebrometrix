@@ -3,7 +3,7 @@ module.exports = function (grunt){
 
 	  concat: {
 	    js: {
-	      src: ['js/arrow.js' , 'js/contact-form-script.js', 'js/about-section-script.js', 'js/scroll-finish.js', 'js/media-queries.js', 'js/navbar-activation.js'],
+	      src: ['js/arrow.js' , 'js/contact-form-script.js', 'js/scroll-finish.js', 'js/media-queries.js', 'js/navbar-activation.js', 'js/about-section-script.js'],
 	      dest: 'build/scripts.js',
 	    },
 	  },
