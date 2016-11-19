@@ -116,12 +116,12 @@ function largeScreenViewing(){
   } else if($('.navbar-brand-name').css('font-size') === '22px'){
     // $('section.contact-section').css('background-size', '1440px 1004px');
     $('.main-section').css('background-size', '2560px 900px');
-    $('section.contact-section').css('background-size', '2560px 1004px');
+    $('section.contact-section').css({'background-size': '2560px 1004px', 'min-height' : '900px'});
   } else if($('.navbar-brand-name').css('font-size') === '24px'){
     $('section.main-section').css('background-size','2652px 900px');
-    $('section.contact-section').css('background-size', '2652px 1004px');
+    $('section.contact-section').css({'background-size' : '2652px 1004px', 'min-height': '900px'});
   } else {
-    $('section.contact-section').css('background-size', '1440px 1004px');
+    $('section.contact-section').css({'background-size' :'1440px 1004px' , 'min-height': '800px'});
   }
 }
  
