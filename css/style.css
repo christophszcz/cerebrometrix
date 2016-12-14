@@ -229,6 +229,14 @@ section.main-section{
 
 /* Main Section Media Queries */
 
+@media(min-width: 768px) and (max-width: 1366px){
+  section.main-section {
+    background-position: center;
+    height: 929px;
+    width: 100%;
+  }
+}
+
 @media (min-width: 2560px) and (max-width: 3000px){
   .navbar-brand-name{
     font-size: 24px;
