@@ -280,6 +280,7 @@ $(document).ready(function(){
   }
 
   $(window).resize(showingNavItems);
+   giveMainSectionClassOnLoad();
 });
   
   // Resizing the browser while viewing the main section keeps the nav items white.
@@ -297,6 +298,16 @@ $(document).ready(function(){
   function startNavItems(){
     if ( $('.navbar-brand-name').css('font-size') === '18px' || $('.navbar-brand-name').css('font-size') === '17px'){
       $(".nav-link").css("color", "#fff"); 
+    }
+  }
+
+  function giveMainSectionClassOnLoad(){
+    var aboutScroll = $('#about-scroll').offset().top,
+    margin = $('#about-scroll').outerHeight(),
+    windowHeight = $(window).height(),
+    windowScroll = $(this).scrollTop();
+    if ( windowScroll < (aboutScroll + margin - windowHeight)){
+      $('.navbar-inverse').addClass('transparent');
     }
   }
  
