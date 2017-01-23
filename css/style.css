@@ -327,7 +327,7 @@ section.main-section{
 
 section.about-section{ 
   /*top: 700px;*/
-  min-height: 700px;
+  min-height: 800px;
   position: relative;
   background-color: #fff;
 }
@@ -699,7 +699,7 @@ form textarea:focus {
 /* Contact */
 
 section.contact-section{
-  background-image: url('../images/brandenburg_gate.jpeg');
+  background-image: url('../images/brandenburg_gate.jpg');
   min-height:800px;
   background-size: 1366px 1004px;
   /*top: 700px;*/
