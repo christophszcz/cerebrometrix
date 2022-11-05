@@ -1,4 +1,5 @@
-## Cerebrometrix 
-Cerebrometrix provides fast, efficient, and reliable manual brain segmentations for Magnetic Resonance Images.<br />
+## Cerebrometrix
 
-[http://cerebrometrix.com](http://cerebrometrix.com)
+**Notice:**
+
+This repository has been archived and is no longer maintained. For questions about the project please refer to **cerebrometrix@gmail.com**
